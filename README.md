@@ -12,7 +12,8 @@ Please be careful the scripts may cause some troubles to display overlay icons o
 1. Move working directory to `Lower-PriorityOfOdIcons.ps1` stored.
 1. Run `.\Lower-PriorityOfOdIcons.ps1`
 
-If you want to output report, specify `-Report yes` when running.
+If you want to output report, specify `-Report yes` when running.  
+A report will saved on your desktop.
 
 ## Example
 ```PowerShell
