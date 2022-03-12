@@ -5,7 +5,7 @@ $ParentRegKeyPaths = @(
 
 #OneDriveに関するキーを$OdRegKeysに格納
 $OdRegKeys = @()
-foreach ($ParentRegKeyPath in $ParentRegKeyPaths) {
+foreach($ParentRegKeyPath in $ParentRegKeyPaths) {
 	$TempOdRegKeys = @()
 	$TempOdRegKeys += Get-ChildItem $ParentRegKeyPath | Select-Object Name
 	$OdRegKeys += $TempOdRegKeys.Name.Replace("HKEY_LOCAL_MACHINE", "HKLM:") | Select-String "OneDrive"
@@ -18,7 +18,7 @@ foreach($OdRegKey in $OdRegKeys) {
 }
 
 # 親のパスを削除
-Foreach ($ParentRegKeyPath in $ParentRegKeyPaths) {
+foreach($ParentRegKeyPath in $ParentRegKeyPaths) {
 	For($i = 0; $i -lt $OdRegKeys_String.Length; $i++) {
 		$OdRegKeys_String[$i] = $OdRegKeys_String[$i].Replace($ParentRegKeyPath + "\", "")
 	}
