@@ -8,9 +8,10 @@ Scripts in this repository solves such troubles by lowering priority of OneDrive
 Please be careful the scripts may cause some troubles to display overlay icons of OneDrive.
 
 ## Useage
-1. Run PowerShell as an Administrator
+1. Run PowerShell as an Administrator.
 1. Move working directory to `Lower-PriorityOfOdIcons.ps1` stored.
-1. Run `.\Lower-PriorityOfOdIcons.ps1`
+1. Run `.\Lower-PriorityOfOdIcons.ps1`.
+1. Restart your computer.
 
 If you want to output report, specify `-Report yes` when running.  
 A report will saved on your desktop.
