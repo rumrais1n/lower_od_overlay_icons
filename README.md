@@ -12,10 +12,15 @@ Please be careful the scripts may cause some troubles to display overlay icons o
 1. Move working directory to `Lower-PriorityOfOdIcons.ps1` stored.
 1. Run `.\Lower-PriorityOfOdIcons.ps1`
 
+If you want to output report, specify `-Report yes` when running.
+
 ## Example
 ```PowerShell
 PS> cd $Env:USERPROFILE\Downloads\
 PS> .\Lower-PriorityOfOdIcons.ps1
+
+# In case of outputting a report
+PS> .\Lower-PriorityOfOdIcons.ps1 -Report yes
 ```
 
 ## CAUTION
