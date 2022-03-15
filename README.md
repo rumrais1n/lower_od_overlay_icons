@@ -7,7 +7,7 @@ Although OneDrive sometimes modify registry keys to avoid the limitations by rai
 Scripts in this repository solves such troubles by lowering priority of OneDrive overlay icons.  
 Please be careful the scripts may cause some troubles to display overlay icons of OneDrive.
 
-## Useage
+## Usage
 1. Run PowerShell as an Administrator.
 1. Move working directory to `Lower-PriorityOfOdIcons.ps1` stored.
 1. Run `.\Lower-PriorityOfOdIcons.ps1`.
